@@ -1,0 +1,46 @@
+@import "./../../../styles/variables.scss";
+
+.leaveTab {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: $white;
+
+  gap: 1rem;
+  border-radius: 0.5rem;
+
+  img {
+    width: 2.3rem;
+  }
+
+  .info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    h5 {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+      font-weight: $font-bold;
+    }
+
+    p {
+      font-size: 0.7rem;
+      margin: 0rem;
+
+      span {
+        font-weight: $font-bold;
+      }
+    }
+
+    .leaveStatus {
+      background-color: $primary-color;
+      height: fit-content;
+      color: $white;
+      font-size: 0.7rem;
+      font-weight: $font-bold;
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.2rem;
+    }
+  }
+}

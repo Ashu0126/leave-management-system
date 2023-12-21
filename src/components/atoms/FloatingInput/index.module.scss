@@ -1,0 +1,38 @@
+@import "./../../../styles/variables.scss";
+
+.floatingInputContainer {
+  position: relative;
+  margin-bottom: 20px;
+
+  label {
+    position: absolute;
+    margin: 1rem;
+    opacity: 0.5;
+    font-size: 0.85rem;
+    transform-origin: 0 0;
+    font-weight: $font-semibold;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+
+  input {
+    width: 100%;
+    font-size: 0.85rem;
+    border: 1px solid #ccc;
+    padding: 1.5rem 0.95rem 0.4rem 0.95rem;
+    border-radius: 5px;
+    outline: none;
+    font-weight: $font-semibold;
+  }
+}
+
+.focused {
+  label {
+    transform: translateY(-40%) scale(0.8);
+    opacity: 1;
+    color: $primary-color;
+  }
+
+  input {
+    border-color: $primary-color;
+  }
+}

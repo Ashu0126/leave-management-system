@@ -1,0 +1,34 @@
+{
+  "leaveList": [
+    {
+      "leaveHeading": "Total Leaves",
+      "leaveIcon": "/svgs/Leave_application.svg",
+      "leaveCount": "22"
+    },
+    {
+      "leaveHeading": "Used Leave",
+      "leaveIcon": "/svgs/Leave_application.svg",
+      "leaveCount": "8"
+    },
+    {
+      "leaveHeading": "Vacation Leaves",
+      "leaveIcon": "/svgs/Leave_application.svg",
+      "leaveCount": "4"
+    },
+    {
+      "leaveHeading": "Sick Leaves",
+      "leaveIcon": "/svgs/Leave_application.svg",
+      "leaveCount": "1"
+    },
+    {
+      "leaveHeading": "Unpaid Leaves",
+      "leaveIcon": "/svgs/Leave_application.svg",
+      "leaveCount": "0"
+    },
+    {
+      "leaveHeading": "Remaining Leaves",
+      "leaveIcon": "/svgs/Leave_application.svg",
+      "leaveCount": "2"
+    }
+  ]
+}

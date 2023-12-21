@@ -7,8 +7,10 @@ const Calender = (props: any) => {
 
   const [date, setDate] = useState(new Date());
 
-  const daysInMonth = (year, month) => new Date(year, month + 1, 0).getDate();
-  const firstDayOfMonth = (year, month) => new Date(year, month, 1).getDay();
+  const daysInMonth = (year: any, month: any) =>
+    new Date(year, month + 1, 0).getDate();
+  const firstDayOfMonth = (year: any, month: any) =>
+    new Date(year, month, 1).getDay();
 
   const handlePrevMonth = () => {
     setDate(new Date(date.getFullYear(), date.getMonth() - 1, date.getDate()));
@@ -47,7 +49,7 @@ const Calender = (props: any) => {
               {day}
             </div>
           ))}
-          {calendarDays.map((day, index) => (
+          {calendarDays.map((day: any, index: any) => (
             <div key={index} className={day ? "day" : "empty-day"}>
               {day}
             </div>

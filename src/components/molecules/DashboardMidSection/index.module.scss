@@ -1,0 +1,51 @@
+@import "./../../../styles/variables.scss";
+
+.basicInfo {
+  padding: 1.5rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+
+  h3 {
+    font-size: 1.3rem;
+    font-weight: $font-bold;
+    margin-bottom: 1.5rem;
+  }
+
+  .announcement {
+    background-color: $white;
+    box-shadow: 0.5px 0.5px 5px $highlight-color;
+    padding: 2rem;
+    border-radius: 1rem;
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .teamLeave {
+    background-color: $white;
+    padding: 2rem;
+    grid-area: 1 / 3 / 3 / 4;
+    border-radius: 1rem;
+    box-shadow: 0.5px 0.5px 5px $highlight-color;
+
+    section {
+      display: grid;
+      gap: 1.5rem;
+    }
+  }
+
+  .leaveRequest {
+    box-shadow: 0.5px 0.5px 5px $highlight-color;
+    background-color: $white;
+    border-radius: 1rem;
+    padding: 2rem;
+    grid-area: 2 / 1 / 6 / 3;
+  }
+
+  .leaveCalender {
+    grid-area: 3 / 3 / 6 / 3;
+    box-shadow: 0.5px 0.5px 5px $highlight-color;
+    background-color: $white;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+}

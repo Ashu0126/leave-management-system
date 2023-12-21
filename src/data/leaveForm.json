@@ -1,0 +1,51 @@
+{
+  "employeeDetails": {
+    "question": "Employee Information:",
+    "items": [
+      {
+        "title": "First Name"
+      },
+      {
+        "title": "Last Name"
+      },
+      {
+        "title": "Mobile Number"
+      },
+      {
+        "title": "Email Address"
+      },
+      {
+        "title": "Employee's Id"
+      }
+    ]
+  },
+  "leaveDetails": {
+    "question": "Leave Details:",
+    "items": [
+      {
+        "title": "Type of leave",
+        "options": ["Annual Leave", "Sick Leave", "Personal Leave"]
+      },
+      {
+        "title": "Start date"
+      },
+      {
+        "title": "End date"
+      },
+      {
+        "title": "Reason for leave"
+      }
+    ]
+  },
+  "additionalDetails": {
+    "question": "Additional Information (if applicable):",
+    "items": [
+      {
+        "title": "Number of Days Requested"
+      },
+      {
+        "title": "Alternate Contact Information "
+      }
+    ]
+  }
+}

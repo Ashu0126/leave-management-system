@@ -1,0 +1,22 @@
+.carousel {
+  :global(.carousel-control-next) {
+    width: fit-content;
+  }
+
+  :global(.carousel-control-prev) {
+    width: fit-content;
+  }
+
+  :global(.carousel-control-next-icon) {
+    filter: invert(1);
+  }
+
+  :global(.carousel-control-prev-icon) {
+    filter: invert(1);
+  }
+
+  :global(.carousel-item) {
+    padding: 0 2rem;
+    text-align: center;
+  }
+}

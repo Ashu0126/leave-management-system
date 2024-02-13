@@ -7,6 +7,8 @@ const Calender = (props: any) => {
 
   const [date, setDate] = useState(new Date());
 
+  console.log("here", date.getDate());
+
   const daysInMonth = (year: any, month: any) =>
     new Date(year, month + 1, 0).getDate();
   const firstDayOfMonth = (year: any, month: any) =>
@@ -45,12 +47,21 @@ const Calender = (props: any) => {
         </div>
         <div className={style.days}>
           {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day) => (
-            <div key={day} className='day-label'>
+            <div key={day} className="day-label">
               {day}
             </div>
           ))}
           {calendarDays.map((day: any, index: any) => (
-            <div key={index} className={day ? "day" : "empty-day"}>
+            <div
+              key={index}
+              className={
+                day === date.getDate()
+                  ? style.currentDate
+                  : day
+                  ? "day"
+                  : "empty-day"
+              }
+            >
               {day}
             </div>
           ))}
